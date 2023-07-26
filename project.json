@@ -1,0 +1,78 @@
+{
+  "name": "interfaces-interview-assignment",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/interfaces-interview-assignment"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "interfaces-interview-assignment:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "interfaces-interview-assignment:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "interfaces-interview-assignment:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "interfaces-interview-assignment:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "interfaces-interview-assignment:build:development"
+        },
+        "production": {
+          "buildTarget": "interfaces-interview-assignment:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/interfaces-interview-assignment"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "coverage/interfaces-interview-assignment"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "interfaces-interview-assignment:build"
+      }
+    }
+  },
+  "tags": []
+}
