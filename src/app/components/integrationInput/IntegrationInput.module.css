@@ -1,0 +1,52 @@
+.wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 2.5rem;
+	width: 26.5rem;
+}
+.label {
+	color: #344765;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: -0.0125rem;
+}
+.addedIntegrationsWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.addedIntegration {
+	display: flex;
+	gap: 0.25rem;
+}
+.addingUrlWrapper {
+	display: flex;
+	height: 1.5rem;
+	align-items: center;
+	gap: 0.25rem;
+}
+.integrationLogo {
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 0.25rem;
+}
+.tag {
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0rem 0.5rem;
+	border-radius: 0.25rem;
+	background: #dcfaec;
+	color: #0b752e;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	width: fit-content;
+}
+.integrationMenuButton {
+	display: none !important;
+}
+.wrapper:hover .integrationMenuButton {
+	display: inline-flex !important;
+}

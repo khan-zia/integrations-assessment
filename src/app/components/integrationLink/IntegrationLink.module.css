@@ -1,0 +1,48 @@
+.link {
+	all: unset;
+	height: 1.5rem;
+	padding: 0 0.5rem 0 0.13rem;
+	border-radius: 0.25rem;
+	background: #fff;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	transition: all 0.08s ease-out;
+}
+.link:hover {
+	background: #cfd8e5;
+}
+.link:active {
+	background: #c0cad7;
+}
+.hasError {
+	padding: 0 0 0 0.13rem;
+}
+.disabled,
+.disabled:hover,
+.disabled:active {
+	background: #fff;
+	cursor: default;
+}
+.logo {
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 0.25rem;
+}
+.linkText {
+	color: #242c39;
+	font-size: 0.875rem;
+	letter-spacing: -0.0125rem;
+}
+.titleText {
+	font-weight: 500;
+}
+.linkTextDisabled {
+	color: #a6b3c7;
+}
+.linkTextError {
+	color: #cc1010;
+	margin-right: 0.25rem;
+}
