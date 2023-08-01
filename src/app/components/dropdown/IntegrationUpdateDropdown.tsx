@@ -100,7 +100,11 @@ const IntegrationUpdateDropdown = (
 							onClose();
 						}}
 					>
-						<action.Icon />
+						<action.Icon
+							className={classNames({
+								[styles.dangerIcon]: action.type === 'delete',
+							})}
+						/>
 						<span className={styles.dropdownItemLabel}>
 							{action.title}
 						</span>

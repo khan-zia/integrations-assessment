@@ -30,3 +30,6 @@
 .dropdownItemDanger:active .dropdownItemLabel {
 	color: #cc1010;
 }
+.dangerIcon {
+	color: #cc1010;
+}

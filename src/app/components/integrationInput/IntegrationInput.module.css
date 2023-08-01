@@ -43,6 +43,7 @@
 	font-size: 0.8125rem;
 	font-weight: 500;
 	width: fit-content;
+	white-space: nowrap;
 }
 .integrationMenuButton {
 	display: none !important;
