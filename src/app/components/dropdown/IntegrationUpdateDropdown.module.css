@@ -1,0 +1,32 @@
+.dropdown {
+	composes: dropdown from './IntegrationDropdown.module.css';
+}
+.dropdownLabel {
+	composes: dropdownLabel from './IntegrationDropdown.module.css';
+}
+.dropdownItem {
+	composes: dropdownItem from './IntegrationDropdown.module.css';
+}
+.dropdownItem:hover .dropdownItemLabel {
+	color: #2e5fe8;
+}
+.dropdownItem:active .dropdownItemLabel {
+	color: #173074;
+	transition: all 0.3s ease-out;
+}
+.dropdownItemLabel {
+	composes: dropdownItemLabel from './IntegrationDropdown.module.css';
+}
+.dropdownItemDanger:hover {
+	background: #ffefef;
+}
+.dropdownItemDanger:active {
+	background: #f3aeaf;
+}
+.dropdownItemDanger .dropdownItemLabel,
+.dropdownItemDanger:hover .dropdownItemLabel {
+	color: #e5484d;
+}
+.dropdownItemDanger:active .dropdownItemLabel {
+	color: #cc1010;
+}

@@ -1,0 +1,36 @@
+.inputWrapper {
+	width: 100%;
+	border-radius: 0.3125rem;
+}
+.inputWrapper:focus-within {
+	box-shadow: 0 0 0 2px #b7d9f8;
+}
+.input {
+	all: unset;
+	width: 100%;
+	padding: 0.0625rem 0.44rem;
+	border-radius: 0.25rem;
+	background: #f2f2f2;
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	box-sizing: border-box;
+	border: 1px solid #f2f2f2;
+	color: #242c39;
+	text-overflow: ellipsis;
+}
+.input::placeholder {
+	color: var(--core-text-subdued, #617798);
+	font-family: Inter;
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	opacity: 1; /* For Firefox */
+}
+.input:hover,
+.input:focus {
+	border: 1px solid #2e5fe8;
+}
+.danger {
+	color: #cc1010;
+	background: #ffefef;
+	border-color: #ffefef;
+}

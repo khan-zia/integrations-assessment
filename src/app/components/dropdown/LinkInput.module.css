@@ -1,0 +1,33 @@
+.linkInput {
+	display: inline-block;
+	width: 15.8125rem;
+	border-radius: 0.5rem;
+	background: #fff;
+	box-shadow: 0px 1px 10px 0px rgba(37, 40, 43, 0.12);
+	padding: 0.5rem;
+}
+.linkInputArrow {
+	width: 0;
+	height: 0;
+	border-left: 0.4375rem solid transparent;
+	border-right: 0.4375rem solid transparent;
+	border-bottom: 0.4375rem solid #fff;
+	filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.2));
+	margin: auto;
+	margin-top: -0.9375rem;
+}
+.linkInputTitle {
+	color: #242c39;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1rem;
+	width: fit-content;
+	padding-top: 0.5rem;
+}
+.linkInputField {
+	margin-top: 0.25rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}

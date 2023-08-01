@@ -1,0 +1,13 @@
+.dropdown {
+	position: absolute;
+	display: none;
+	width: fit-content;
+	height: fit-content;
+	z-index: 999999;
+}
+.dropdownOpen {
+	display: block;
+}
+.dropdownClose {
+	display: none;
+}
