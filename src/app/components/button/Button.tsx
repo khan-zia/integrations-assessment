@@ -40,7 +40,12 @@ const Button = forwardRef(
 		}
 
 		return (
-			<button className={btnClasses} ref={ref} {...rest}>
+			<button
+				className={btnClasses}
+				disabled={disabled}
+				ref={ref}
+				{...rest}
+			>
 				{icon} {title}
 			</button>
 		);
