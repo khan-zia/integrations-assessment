@@ -1,4 +1,6 @@
 /// <reference types="vitest" />
+/// <reference types="vite/client" />
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
@@ -34,6 +36,8 @@ export default defineConfig({
 
 	test: {
 		globals: true,
+		css: true,
+		setupFiles: './src/__tests__/setup.ts',
 		cache: {
 			dir: './node_modules/.vitest',
 		},

@@ -178,7 +178,7 @@ const Dropdown = (props: DropdownProps): JSX.Element => {
 		 * events. To allow for any code triggered events to be registered by the
 		 * parentRef.current.contains(), a minor delay is both sufficient and efficient.
 		 */
-		setTimeout(() => window.addEventListener('click', close), 20);
+		setTimeout(() => window.addEventListener('click', close), 10);
 
 		// clean up event on unmount.
 		return () => window.removeEventListener('click', close);
